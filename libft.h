@@ -6,7 +6,7 @@
 /*   By: mgould <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 11:38:24 by mgould            #+#    #+#             */
-/*   Updated: 2017/02/07 16:16:53 by mgould           ###   ########.fr       */
+/*   Updated: 2017/02/20 14:31:14 by mgould           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ typedef struct		s_box
 	char			specifier;
 }					t_box;
 
+int					get_next_line(const int fd, char **line);
 t_box				*box_init();
 int					ft_printf(const char *str, ...);
 char				*ft_start_strstr(const char *big, const char *little);
@@ -170,4 +171,7 @@ int					ft_recursive_factorial(int nb);
 int					ft_iterative_power(int nb, int power);
 int					ft_sqrt(int nb);
 int					ft_is_prime(int nb);
+void				ft_putstr_color(char *str, int color);
+void				ft_putstr_color_fd(char *str, int color, int fd);
+void				ft_putchar_color_fd(char c, int color, int fd);
 #endif

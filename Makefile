@@ -6,11 +6,11 @@
 #    By: mgould <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 11:37:28 by mgould            #+#    #+#              #
-#    Updated: 2017/02/07 12:03:33 by mgould           ###   ########.fr        #
+#    Updated: 2017/02/20 14:31:29 by mgould           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ../libftprintf.a
+NAME = libft.a
 
 CFLAGS = -Wall -Wextra -Werror -I .
 
@@ -43,7 +43,9 @@ SRC	= ft_atoi.c ft_putchar.c ft_strlen.c \
 		pf_meta_helpers.c pf_d_i_helpers.c pf_typemod_helpers.c \
 		pf_meta_helpers2.c pf_meta_helpers3.c pf_ox_helpers.c \
 		pf_str_helpers.c pf_cpu_helpers.c pf_print_helpers.c \
-		pf_d_i_negative.c pf_meta_helpers1.c
+		pf_d_i_negative.c pf_meta_helpers1.c \
+		get_next_line.c \
+		ft_putstr_color.c ft_putstr_color_fd.c ft_putchar_color_fd.c
 
 O = $(SRC:.c=.o)
 
